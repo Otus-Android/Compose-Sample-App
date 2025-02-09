@@ -15,17 +15,17 @@ import ru.otus.compose.features.characterdetails.SharedCharacterInfo
 import ru.otus.compose.features.characters.CharactersScreen
 import ru.otus.compose.ui.SplashScreen
 import ru.otus.compose.ui.theme.AppTheme
-import ru.otus.compose.ui.theme.ComposeLessonTheme
+import ru.otus.compose.ui.theme.ComposeSampleAppTheme
 
 typealias OnThemeToggle = () -> Unit
 
 @OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
-fun ComposeLessonApp(
+fun ComposeSampleApp(
     onToggleTheme: () -> Unit,
     darkTheme: Boolean,
 ) {
-    ComposeLessonTheme(darkTheme = darkTheme) {
+    ComposeSampleAppTheme(darkTheme = darkTheme) {
         Surface(color = AppTheme.colors.background) {
             SharedTransitionLayout {
                 val navController = rememberNavController()

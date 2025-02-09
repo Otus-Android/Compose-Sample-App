@@ -31,7 +31,7 @@ import com.google.accompanist.glide.rememberGlidePainter
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import ru.otus.compose.R
-import ru.otus.compose.ui.theme.ComposeLessonTheme
+import ru.otus.compose.ui.theme.ComposeSampleAppTheme
 
 @Immutable
 data class CharacterItemState(
@@ -146,7 +146,7 @@ private fun ItemImage(
 @Preview
 @Composable
 fun CharacterItemPreview() {
-    ComposeLessonTheme(darkTheme = false) {
+    ComposeSampleAppTheme(darkTheme = false) {
         Surface(
             color = MaterialTheme.colorScheme.surface,
         ) {

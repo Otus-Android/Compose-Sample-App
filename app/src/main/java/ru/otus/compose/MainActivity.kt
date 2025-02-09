@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
                 targetState = isLightTheme,
                 animationSpec = tween(500)
             ) {
-                ComposeLessonApp(
+                ComposeSampleApp(
                     darkTheme = !isLightTheme,
                     onToggleTheme = {
                         isLightTheme = !isLightTheme
